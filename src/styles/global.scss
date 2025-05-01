@@ -1,0 +1,12 @@
+$main-color: #afdbf8;
+$main-bg-color: #292929;
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: $main-bg-color;
+	color: $main-color;
+}
