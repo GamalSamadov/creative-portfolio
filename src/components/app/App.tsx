@@ -1,5 +1,9 @@
-import styles from './App.module.scss'
+import { Header } from '@/components/layouts/header'
 
 export const App = () => {
-	return <main className={styles.main}>App</main>
+  return (
+    <main>
+      <Header />
+    </main>
+  )
 }

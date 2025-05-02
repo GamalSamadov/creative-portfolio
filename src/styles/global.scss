@@ -1,12 +1,10 @@
-$main-color: #afdbf8;
-$main-bg-color: #292929;
+@use './sass/variables' as *;
+@use './sass/global-rules' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	background-color: $main-bg-color;
-	color: $main-color;
+  background: $primary-900;
+  color: $primary-100;
+  font-family: 'Open Sans', sans-serif;
 }
