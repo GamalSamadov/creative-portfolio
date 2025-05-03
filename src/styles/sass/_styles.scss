@@ -4,3 +4,10 @@
 .rounded-lg {
   border-radius: 1.5rem;
 }
+
+.flex-between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

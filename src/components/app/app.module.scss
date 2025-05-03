@@ -1,22 +1,45 @@
 .main {
+  display: flex;
+  flex-direction: column;
+
+  $p-size: 2;
+  $padding: 4px * $p-size;
   @include breakpoints(xs) {
-    padding-left: 2 * 4px;
-    padding-right: 2 * 4px;
+    padding: {
+      left: $padding;
+      right: $padding;
+    }
   }
   @include breakpoints(sm) {
-    padding-left: 4 * 4px;
-    padding-right: 4 * 4px;
+    $p-size: 4;
+    $padding: 4px * $p-size;
+    padding: {
+      left: $padding;
+      right: $padding;
+    }
   }
   @include breakpoints(md) {
-    padding-left: 5 * 4px;
-    padding-right: 5 * 4px;
+    $p-size: 5;
+    $padding: 4px * $p-size;
+    padding: {
+      left: $padding;
+      right: $padding;
+    }
   }
   @include breakpoints(lg) {
-    padding-left: 10 * 4px;
-    padding-right: 10 * 4px;
+    $p-size: 10;
+    $padding: 4px * $p-size;
+    padding: {
+      left: $padding;
+      right: $padding;
+    }
   }
   @include breakpoints(xl) {
-    padding-left: 20 * 4px;
-    padding-right: 20 * 4px;
+    $p-size: 20;
+    $padding: 4px * $p-size;
+    padding: {
+      left: $padding;
+      right: $padding;
+    }
   }
 }

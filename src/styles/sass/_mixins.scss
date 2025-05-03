@@ -1,5 +1,4 @@
 @mixin gradient-border($border: 1px, $direction: to bottom, $from, $to) {
-  margin: auto;
   position: relative;
   box-sizing: border-box;
   background-clip: padding-box;
@@ -22,6 +21,13 @@
   &:hover {
     background-color: $color;
     box-shadow: 0 0 15px 2px $shadow;
+  }
+}
+
+@mixin text-hover($color, $shadow: $primary-shadow) {
+  transition: color $main-duration ease-out;
+  &:hover {
+    color: $color;
   }
 }
 

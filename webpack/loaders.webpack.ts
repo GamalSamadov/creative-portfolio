@@ -35,7 +35,13 @@ export function getWebpackLoaders({ mode, paths }: IBuildEnv): RuleSetRule[] {
   const sassResourcesLoader = {
     loader: 'sass-resources-loader',
     options: {
-      resources: [path.resolve(paths.src, 'styles', 'sass', '*.scss')],
+      resources: [
+        path.resolve(paths.src, 'styles', 'sass', '_variables.scss'),
+        path.resolve(paths.src, 'styles', 'sass', '_mixins.scss'),
+        path.resolve(paths.src, 'styles', 'sass', '_spacing.scss'),
+        path.resolve(paths.src, 'styles', 'sass', '_typography.scss'),
+        path.resolve(paths.src, 'styles', 'sass', '_styles.scss'),
+      ],
     },
   }
 
