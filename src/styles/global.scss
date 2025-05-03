@@ -1,10 +1,30 @@
-@use './sass/variables' as *;
-@use './sass/global-rules' as *;
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: $primary-900;
   color: $primary-100;
-  font-family: 'Open Sans', sans-serif;
+  font: {
+    family: 'Open Sans', sans-serif;
+    size: 14px;
+    weight: 400;
+  }
+}
+button,
+a {
+  color: $primary-100;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,0 +1,7 @@
+.button {
+  background-color: $primary-800;
+  box-shadow: 0 -2px 2px $primary-shadow;
+  @extend .text-base, .px-6, .py-2, .rounded;
+  @include gradient-border($from: $primary-500, $to: transparent);
+  @include bg-hover($primary-600);
+}

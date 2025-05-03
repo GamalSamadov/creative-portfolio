@@ -1,9 +1,10 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { RuleSetRule } from 'webpack'
 
+import path from 'path'
 import { IBuildEnv } from './types.webpack'
 
-export function getWebpackLoaders({ mode }: IBuildEnv): RuleSetRule[] {
+export function getWebpackLoaders({ mode, paths }: IBuildEnv): RuleSetRule[] {
   const babelLoader = {
     test: /\.(ts|tsx)?$/,
     exclude: /node_modules/,
@@ -31,12 +32,20 @@ export function getWebpackLoaders({ mode }: IBuildEnv): RuleSetRule[] {
     },
   }
 
+  const sassResourcesLoader = {
+    loader: 'sass-resources-loader',
+    options: {
+      resources: [path.resolve(paths.src, 'styles', 'sass', '*.scss')],
+    },
+  }
+
   const styleLoader = {
     test: /\.(css|scss|sass)?$/,
     use: [
       mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
       cssLoader,
       'sass-loader',
+      sassResourcesLoader,
     ],
   }
 

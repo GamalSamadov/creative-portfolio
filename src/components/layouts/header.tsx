@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 export const Header = () => {
   return (
     <header>
-      <Button />
+      <Button>Download</Button>
     </header>
   )
 }

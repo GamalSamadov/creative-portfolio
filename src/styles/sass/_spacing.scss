@@ -1,0 +1,90 @@
+$count: 8;
+$spacing: 4px;
+
+@for $i from 1 through $count {
+  .p-#{$i} {
+    padding: $i * $spacing;
+  }
+}
+
+@for $i from 1 through $count {
+  .pt-#{$i} {
+    padding-top: $i * $spacing;
+  }
+}
+@for $i from 1 through $count {
+  .pb-#{$i} {
+    padding-bottom: $i * $spacing;
+  }
+}
+@for $i from 1 through $count {
+  .pl-#{$i} {
+    padding-left: $i * $spacing;
+  }
+}
+@for $i from 1 through $count {
+  .pr-#{$i} {
+    padding-right: $i * $spacing;
+  }
+}
+
+@for $i from 1 through $count {
+  .px-#{$i} {
+    padding-left: $i * $spacing;
+    padding-right: $i * $spacing;
+  }
+}
+@for $i from 1 through $count {
+  .py-#{$i} {
+    padding-top: $i * $spacing;
+    padding-bottom: $i * $spacing;
+  }
+}
+
+@for $i from 1 through $count {
+  .m-#{$i} {
+    margin: $i * $spacing;
+  }
+}
+
+@for $i from 1 through $count {
+  .mt-#{$i} {
+    margin-top: $i * $spacing;
+  }
+}
+@for $i from 1 through $count {
+  .mb-#{$i} {
+    margin-bottom: $i * $spacing;
+  }
+}
+@for $i from 1 through $count {
+  .ml-#{$i} {
+    margin-left: $i * $spacing;
+  }
+}
+@for $i from 1 through $count {
+  .mr-#{$i} {
+    margin-right: $i * $spacing;
+  }
+}
+
+@for $i from 1 through $count {
+  .mx-#{$i} {
+    margin-left: $i * $spacing;
+    margin-right: $i * $spacing;
+  }
+}
+@for $i from 1 through $count {
+  .my-#{$i} {
+    margin-top: $i * $spacing;
+    margin-bottom: $i * $spacing;
+  }
+}
+
+.position-absolute-0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

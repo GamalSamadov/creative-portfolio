@@ -7,7 +7,7 @@ export function getWebpackDevServer({ mode }: IBuildEnv): DevConfiguration {
 
   return {
     port: 3000,
-    open: true,
+    open: false,
     hot: true,
     compress: true,
   }

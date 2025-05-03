@@ -1,0 +1,22 @@
+.main {
+  @include breakpoints(xs) {
+    padding-left: 2 * 4px;
+    padding-right: 2 * 4px;
+  }
+  @include breakpoints(sm) {
+    padding-left: 4 * 4px;
+    padding-right: 4 * 4px;
+  }
+  @include breakpoints(md) {
+    padding-left: 5 * 4px;
+    padding-right: 5 * 4px;
+  }
+  @include breakpoints(lg) {
+    padding-left: 10 * 4px;
+    padding-right: 10 * 4px;
+  }
+  @include breakpoints(xl) {
+    padding-left: 20 * 4px;
+    padding-right: 20 * 4px;
+  }
+}
