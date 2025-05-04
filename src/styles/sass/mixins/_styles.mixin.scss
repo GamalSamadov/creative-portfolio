@@ -1,0 +1,25 @@
+@mixin gradient-border($border: 1px, $direction: to bottom, $from, $to) {
+  position: relative;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  border: solid $border transparent;
+
+  &:before {
+    content: '';
+    @extend .position-absolute-0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient($direction, $from, $to);
+  }
+}
+
+@mixin bg-hover($color, $shadow: $primary-shadow) {
+  transition:
+    background-color $main-duration ease-out,
+    box-shadow $main-duration ease-in;
+  &:hover {
+    background-color: $color;
+    box-shadow: 0 0 15px 2px $shadow;
+  }
+}

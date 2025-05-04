@@ -1,0 +1,29 @@
+.mainTitle {
+  gap: 5px;
+  @extend .flex-center-column;
+  > p {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    > span {
+      color: $primary-400;
+      position: relative;
+      font-size: $font-base;
+      @extend .font-thin;
+    }
+  }
+  > h2 {
+    @include text-gradient(to right, $primary-200, $primary-100);
+    @include text-primary;
+  }
+  > h1 {
+    margin-top: -15px;
+    > span:nth-child(1) {
+      @include text-gradient(to right, $secondary-300, $secondary-500);
+      @include text-primary;
+    }
+    > span:nth-child(2) {
+      @include text-gradient(to right, $primary-200, $primary-100);
+    }
+  }
+}

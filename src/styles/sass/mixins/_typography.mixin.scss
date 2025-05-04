@@ -1,0 +1,41 @@
+@mixin text-gradient($direction, $from, $to) {
+  background: linear-gradient($direction, $from 0%, $from 50%, $to 100%);
+  background-clip: text;
+  text-fill-color: transparent;
+  text-stroke: 0.5px transparent;
+  text-stroke-color: transparent;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke: 0.5px transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@mixin text-hover($color, $shadow: $primary-shadow) {
+  transition: color $main-duration ease-out;
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin text-primary {
+  width: 100%;
+  white-space: wrap;
+  line-height: normal;
+  @include breakpoints(xs) {
+    font-size: $font-3xl;
+    width: 100%;
+  }
+  @include breakpoints(sm) {
+    font-size: $font-4xl;
+    width: 100%;
+  }
+  @include breakpoints(md) {
+    width: 700px;
+  }
+  @include breakpoints(lg) {
+    width: 700px;
+  }
+  @include breakpoints(xl) {
+    width: 700px;
+  }
+}

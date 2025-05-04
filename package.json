@@ -67,8 +67,10 @@
     "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {
+    "lucide-react": "^0.507.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-simple-typewriter": "^5.0.1",
     "ts-node": "^10.9.2"
   }
 }

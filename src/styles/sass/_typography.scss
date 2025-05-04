@@ -1,12 +1,12 @@
-$sizes:
-  xs 0.75rem,
-  sm 0.875rem,
-  base 1rem,
-  lg 1.125rem,
-  xl 1.25rem,
-  '2xl' 1.5rem,
-  '3xl' 1.875rem,
-  '4xl' 2.25rem;
+$font-xs: 0.75rem;
+$font-sm: 0.875rem;
+$font-base: 1rem;
+$font-lg: 1.125rem;
+$font-xl: 1.25rem;
+$font-2xl: 1.5rem;
+$font-3xl: 1.875rem;
+$font-4xl: 2.25rem;
+
 $colors: (
   primary-100: $primary-100,
   primary-200: $primary-200,
@@ -18,19 +18,28 @@ $colors: (
   primary-800: $primary-800,
   primary-900: $primary-900,
 );
-@each $name, $size in $sizes {
-  .text-#{$name} {
-    font-size: $size;
-  }
-}
+
 @each $name, $color in $colors {
   .text-#{$name} {
     color: $color;
   }
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 .font-bold {
   font-weight: bold;
 }
 .font-italic {
   font-style: italic;
+}
+
+.font-thin {
+  font-weight: 300;
 }
