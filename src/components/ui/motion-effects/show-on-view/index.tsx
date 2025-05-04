@@ -20,7 +20,7 @@ export const ShowOnView = ({
       }}
       initial="hidden"
       animate={!isInView ? 'hidden' : 'visible'}
-      transition={{ duration: 0.35, ease: 'anticipate', delay: (delayOrder / 10) * 2 }}
+      transition={{ duration: 0.35, ease: 'circInOut', delay: (delayOrder / 10) * 2 }}
     >
       {children}
     </m.div>
