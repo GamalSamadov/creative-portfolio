@@ -1,7 +1,7 @@
 .mainTitle {
   gap: 5px;
   @extend .flex-center-column;
-  > p {
+  p {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -12,11 +12,11 @@
       @extend .font-thin;
     }
   }
-  > h2 {
+  h2 {
     @include text-gradient(to right, $primary-100, $primary-300);
     @include text-primary;
   }
-  > h1 {
+  h1 {
     margin-top: -15px;
     > span:nth-child(1) {
       @include text-gradient(to right, $secondary-300, $secondary-500);

@@ -9,6 +9,9 @@
   background: $primary-100;
   color: $primary-900;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 body {
   height: 100vh;
   background: linear-gradient(
