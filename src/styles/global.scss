@@ -10,7 +10,14 @@
   color: $primary-900;
 }
 body {
-  background: $primary-900;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    $primary-950 0%,
+    $primary-950 50%,
+    $primary-950 75%,
+    $primary-900 100%
+  );
   color: $primary-100;
   font: {
     family: 'Open Sans', sans-serif;

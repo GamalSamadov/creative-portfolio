@@ -68,6 +68,7 @@
   },
   "dependencies": {
     "lucide-react": "^0.507.0",
+    "motion": "^12.9.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-simple-typewriter": "^5.0.1",

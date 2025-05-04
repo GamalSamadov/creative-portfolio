@@ -13,7 +13,7 @@
     }
   }
   > h2 {
-    @include text-gradient(to right, $primary-200, $primary-100);
+    @include text-gradient(to right, $primary-100, $primary-300);
     @include text-primary;
   }
   > h1 {
