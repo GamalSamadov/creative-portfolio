@@ -25,12 +25,13 @@
 }
 
 @mixin container {
-  $p-size: 2;
+  $p-size: 4;
   $padding: 4px * $p-size;
   @include breakpoints(xs) {
     padding: {
       left: $padding;
       right: $padding;
+      bottom: $padding;
     }
   }
   @include breakpoints(sm) {
@@ -39,6 +40,7 @@
     padding: {
       left: $padding;
       right: $padding;
+      bottom: $padding;
     }
   }
   @include breakpoints(md) {
@@ -47,6 +49,7 @@
     padding: {
       left: $padding;
       right: $padding;
+      bottom: $padding;
     }
   }
   @include breakpoints(lg) {
@@ -55,6 +58,7 @@
     padding: {
       left: $padding;
       right: $padding;
+      bottom: $padding;
     }
   }
   @include breakpoints(xl) {
@@ -63,6 +67,7 @@
     padding: {
       left: $padding;
       right: $padding;
+      bottom: $padding;
     }
   }
 }

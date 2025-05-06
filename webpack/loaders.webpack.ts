@@ -56,7 +56,7 @@ export function getWebpackLoaders({ mode, paths }: IBuildEnv): RuleSetRule[] {
   }
 
   const assetsLoader = {
-    test: /\.(png|jge?g|gif|webp)$/,
+    test: /\.(png|jpg|jpeg|gif)$/,
     type: 'asset/resource',
     generator: {
       filename: 'assets/[name][hash][ext]',

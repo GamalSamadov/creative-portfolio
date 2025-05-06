@@ -23,6 +23,8 @@
   background: $primary-950;
 }
 .container {
-  height: 400vh;
+  padding: {
+    top: 42px;
+  }
   z-index: 1;
 }

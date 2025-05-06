@@ -1,7 +1,7 @@
 import { m, useInView } from 'motion/react'
 import { ReactNode, useRef } from 'react'
 
-export const ShowOnView = ({
+export const ShowOnViewLeft = ({
   children,
   delayOrder,
 }: {
@@ -15,8 +15,8 @@ export const ShowOnView = ({
     <m.div
       ref={ref}
       variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: '-50%', opacity: 0 },
+        visible: { x: 0, opacity: 1 },
+        hidden: { x: '-50%', opacity: 0 },
       }}
       initial="hidden"
       animate={!isInView ? 'hidden' : 'visible'}

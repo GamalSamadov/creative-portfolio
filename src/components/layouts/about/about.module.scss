@@ -1,0 +1,62 @@
+.about {
+  height: 100vh;
+  gap: 30px;
+  @extend .flex-center-column;
+
+  .title {
+    font-size: $font-4xl;
+  }
+
+  .container {
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      font-size: $font-lg;
+      color: $primary-300;
+      text-align: left;
+      overflow: hidden;
+    }
+
+    @include breakpoints(xs) {
+      flex-direction: column;
+      gap: 50px;
+
+      .text {
+        text-align: center;
+        padding: 2px;
+        font-size: $font-base;
+      }
+    }
+
+    @include breakpoints(sm) {
+      flex-direction: column;
+      gap: 50px;
+
+      .text {
+        text-align: center;
+        padding: 2px;
+        font-size: $font-lg;
+      }
+    }
+
+    @include breakpoints(md) {
+      gap: 40px;
+    }
+
+    @include breakpoints(lg) {
+      .text {
+        width: 80%;
+      }
+    }
+
+    @include breakpoints(xl) {
+      .text {
+        font-size: $font-xl;
+        width: 800px;
+      }
+    }
+  }
+}
