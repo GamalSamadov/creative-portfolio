@@ -3,7 +3,7 @@ import styles from './scroll-mouse.module.scss'
 
 export const ScrollMouse = () => {
   return (
-    <HideOnScroll delayOrder={7}>
+    <HideOnScroll>
       <div className={styles.mouse}>
         <div className={styles.scroll}></div>
       </div>

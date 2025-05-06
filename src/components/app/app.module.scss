@@ -1,45 +1,5 @@
 .main {
   display: flex;
   flex-direction: column;
-
-  $p-size: 2;
-  $padding: 4px * $p-size;
-  @include breakpoints(xs) {
-    padding: {
-      left: $padding;
-      right: $padding;
-    }
-  }
-  @include breakpoints(sm) {
-    $p-size: 4;
-    $padding: 4px * $p-size;
-    padding: {
-      left: $padding;
-      right: $padding;
-    }
-  }
-  @include breakpoints(md) {
-    $p-size: 5;
-    $padding: 4px * $p-size;
-    padding: {
-      left: $padding;
-      right: $padding;
-    }
-  }
-  @include breakpoints(lg) {
-    $p-size: 10;
-    $padding: 4px * $p-size;
-    padding: {
-      left: $padding;
-      right: $padding;
-    }
-  }
-  @include breakpoints(xl) {
-    $p-size: 20;
-    $padding: 4px * $p-size;
-    padding: {
-      left: $padding;
-      right: $padding;
-    }
-  }
+  @include container;
 }

@@ -7,10 +7,9 @@ import { GradientBg } from './gradient-bg'
 export const App = () => {
   return (
     <LazyMotion features={domAnimation}>
+      <Header />
       <main className={styles.main}>
         <GradientBg>
-          <Header />
-
           <Hero />
         </GradientBg>
       </main>

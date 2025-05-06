@@ -3,6 +3,5 @@
   height: 80vh;
   gap: 30px;
   font-size: $font-4xl;
-  @extend .flex-center-column;
-  @extend .text-center;
+  @extend .flex-center-column, .text-center, .pt-8;
 }
