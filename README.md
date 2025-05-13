@@ -14,11 +14,11 @@ A lightning-fast, React 19 + TypeScript 5 site that turns your portfolio into an
 
 **Hero:**
 
-<img src="https://github.com/GamalSamadov/creative-portfolio/screenshots/hero.png?raw=true" alt="Hero" width="800" />
+<img src="https://github.com/GamalSamadov/creative-portfolio/tree/main/screenshots/hero.png?raw=true" alt="Hero" width="800" />
 
 **About:**
 
-<img src="https://github.com/GamalSamadov/creative-portfolio/screenshots/about.png?raw=true" alt="About" width="800" />
+<img src="https://github.com/GamalSamadov/creative-portfolio/tree/main/screenshots/about.png?raw=true" alt="About" width="800" />
 
 ---
 
